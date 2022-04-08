@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+</head>
+<body>
+    <header class="menu">
+    
+        <button class="hamburger" role="menu">
+            <img class="img" src="./assets/Icons/hamburger -blue.svg">
+        </button>
+        
+        <nav class="menuNav hidden"> 
+            <ul class="menu-space">
+                <li class="close"><img src="./assets/Icons/close.svg"></li>
+                <li class="box-card h4-700-18px">Din profil</li>
+                <li class="box-card h4-700-18px">Turhistorikk</li>
+                <li class="box-card h4-700-18px">Betalingskort</li>
+                <li class="box-card h4-700-18px">Betalinger</li>
+                <li class="box-card h4-700-18px">Innstillinger</li>
+            </ul>
+            <img class="blue-logo" src="./assets/Images/RideBlue.png">
+        </nav>
+        
+        <img class="imgLogo" src="assets/Icons/Logo small.svg">
+    </header>
+
+    <div class="weatherNav">
+        <section class="container">
+            <img class="weather-icon" src="./assets/Icons/rain.svg">
+            <span class="weather-content" id="app"></span>
+            <img class="weather-content" src="./assets/Icons/waterTemp.svg">
+            <p>2 Badetemperatur</p>
+            <section id="app"></section>
+        </section>
+    </div>
+
+    <p class="error"></p>
+
+    <div class="pop-up-box hidden">
+        <button id="close-pop"><img src="./assets/Icons/close2.svg"></button>
+        
+    </div>
+
+    <main id="map"></main>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+
+    <script type="module" src="./js/app.js" async></script>
+</body>
+</html>
