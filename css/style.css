@@ -372,9 +372,12 @@ p {
     background-repeat: no-repeat;
 }
 
-
 .menu-space {
     margin: 10px;
+}
+
+.menu-space li {
+    border: none;  
 }
 
 .box-card {
